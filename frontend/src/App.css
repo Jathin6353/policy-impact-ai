@@ -1061,3 +1061,208 @@ body {
   background: var(--accent);
   color: white;
 }
+/* ===== BUDGET HIGHLIGHTS ===== */
+.budget-highlights {
+  background: linear-gradient(135deg, rgba(255,153,0,0.05), rgba(19,136,8,0.05));
+  border: 2px solid rgba(255,153,0,0.3);
+}
+
+.budget-badge {
+  margin-left: 10px;
+  padding: 4px 10px;
+  background: linear-gradient(135deg, #ff9933, #138808);
+  color: white;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.budget-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.budget-stat {
+  text-align: center;
+  padding: 16px;
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+.budget-stat-value {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--accent);
+}
+
+.budget-stat-label {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.budget-stat-badge {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 2px 8px;
+  border-radius: 8px;
+  font-size: 0.65rem;
+  font-weight: bold;
+}
+
+.budget-stat-badge.positive {
+  background: rgba(34, 197, 94, 0.2);
+  color: var(--green);
+}
+
+.budget-section {
+  margin-bottom: 24px;
+}
+
+.budget-section h3 {
+  font-size: 1.1rem;
+  margin-bottom: 14px;
+  color: var(--text-primary);
+}
+
+.budget-changes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 12px;
+}
+
+.budget-change {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px;
+  background: var(--bg-secondary);
+  border-radius: 10px;
+  border-left: 4px solid var(--border);
+}
+
+.budget-change.positive { border-left-color: var(--green); }
+.budget-change.negative { border-left-color: var(--red); }
+.budget-change.neutral { border-left-color: var(--yellow); }
+
+.change-icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 0.8rem;
+}
+
+.budget-change.positive .change-icon { background: rgba(34,197,94,0.2); color: var(--green); }
+.budget-change.negative .change-icon { background: rgba(239,68,68,0.2); color: var(--red); }
+.budget-change.neutral .change-icon { background: rgba(234,179,8,0.2); color: var(--yellow); }
+
+.change-title {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.change-desc {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.allocations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+}
+
+.allocation-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background: var(--bg-secondary);
+  border-radius: 10px;
+}
+
+.allocation-icon {
+  font-size: 1.8rem;
+}
+
+.allocation-name {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.allocation-amount {
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.initiatives-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+}
+
+.initiative {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background: rgba(99,102,241,0.05);
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.initiative span:first-child {
+  font-size: 1.3rem;
+}
+
+.budget-sources {
+  margin-top: 20px;
+  padding: 16px;
+  background: var(--bg-secondary);
+  border-radius: 10px;
+}
+
+.source-title {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.budget-sources a {
+  display: inline-block;
+  margin-right: 16px;
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.budget-sources a:hover {
+  text-decoration: underline;
+}
+
+.expand-btn {
+  width: 100%;
+  padding: 12px;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.9rem;
+  margin-top: 16px;
+  transition: all 0.3s;
+}
+
+.expand-btn:hover {
+  background: var(--bg-secondary);
+  border-color: var(--accent);
+  color: var(--accent);
+}
